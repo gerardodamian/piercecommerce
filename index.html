@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Mi Tienda</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://kit.fontawesome.com/226c66f217.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./style/pierce.css" />
+    </head>
+    <body>
+        <header class="header-page">
+            <!-- <nav class="navbar navbar-expand-sm bg-white navbar-dark">
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <img class="navbar-toggler-icon" src="./img/menu.png" />
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="collapsibleNavbar"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contacto.html"
+                                    >Muebles</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="pages/informacion.html"
+                                    >Calzado</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/terapeutas.html"
+                                    >Colchones</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/ubicacion.html"
+                                    >herramientas</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/noticias.html"
+                                    ><span
+                                        >Ofertas
+                                        <i
+                                            class="fa-solid fa-fire fa-lg"
+                                            style="color: #eb0000"
+                                        ></i></span
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <div class="header-nav">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="barra">
+                            <div class="navbar-brand" href="#">
+                                <h1 class="title-page">Mi Tienda</h1>
+                            </div>
+
+                            <div class="input-group">
+                                <input
+                                    class="form-control me-2"
+                                    type="search"
+                                    aria-label="Search"
+                                />
+                                <img
+                                    class="search-icon"
+                                    src="./img/search.png"
+                                />
+                            </div>
+
+                            <div class="cuenta-carrito">
+                                <div class="cuenta">
+                                    <img src="./img/user-avatar.png" />
+                                    <h4>Mi Cuenta</h4>
+                                </div>
+                                <div class="carrito">
+                                    <img src="./img/cart.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contacto.html"
+                                    >Muebles</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="pages/informacion.html"
+                                    >Calzado</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/terapeutas.html"
+                                    >Colchones</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/ubicacion.html"
+                                    >herramientas</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/noticias.html"
+                                    ><span
+                                        >Ofertas
+                                        <i
+                                            class="fa-solid fa-fire fa-lg"
+                                            style="color: #eb0000"
+                                        ></i></span
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="carr-1">
+            <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bici-01.png" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bici-01.png" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bici-01.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carr-2">
+            <h2 class="title-slide">TENDENCIAS</h2>
+            <div class="slide-container swiper">
+                <div #swiperRef="" class="swiper slide-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <h2 class="visita">VISITÁ LAS CATEGORIAS MÁS POPULARES</h2>
+        <div class="contenedor">
+            <div class="item-card item1">
+                <h3 class="articulos"><a href="#">ZAPATILLAS</a></h3>
+            </div>
+            <div class="item-card item2">
+                <h3 class="articulos"><a href="#">FÚTBOL</a></h3>
+            </div>
+            <div class="item-card item3">
+                <h3 class="articulos"><a href="#">CALZAS</a></h3>
+            </div>
+            <div class="item-card item4">
+                <h3 class="articulos"><a href="#">PELOTAS</a></h3>
+            </div>
+        </div>
+        <section class="carr-dep">
+            <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="0"
+                        class="active-banner"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                    ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active item1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="volve">ZAPATILLAS</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item item2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="volve">BOTINES</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item item3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="volve">PELOTAS</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item item3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="volve">CALZAS</h2>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="carr-3">
+            <h2 class="vendidas">LAS MÁS VENDIDAS</h2>
+
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img
+                                        src="./img/lavarropas.jpeg"
+                                        alt=""
+                                        class="card-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6 class="name">Lavarropas Samsung</h6>
+                                <h3 class="precio">$ 1.100.999</h3>
+                                <button class="comprar-card">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <div class="banner">
+            <div>
+                <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+                <h4>ELEGI LOS PRODUCTOS QUE VAS A COMPRAR</h4>
+                <h6>si querés más de uno, sumalos a tu carrito.</h6>
+            </div>
+            <div>
+                <i class="fa-solid fa-wallet fa-2xl" style="color: #0d0d0d"></i>
+                <h4>PAGÁ CON EL MEDIO DE PAGO QUE QUIERAS</h4>
+                <h6>
+                    Comprá con seguridad, usamos la tecnología de Mercado Pago.
+                </h6>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck fa-2xl" style="color: #050505"></i>
+                <h4>RECIBÍ EL PRODUCTO QUE ESPERABAS</h4>
+                <h6>
+                    Elegí la forma de entrega que prefieras ¡y listo! Aseguramos
+                    tu entrega con Mercado Envios.
+                </h6>
+            </div>
+        </div>
+        <div class="banner-2">
+            <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner-1.png" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner-2.png" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner3.png" />
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="info-footer">
+                <div class="informacion">
+                    <ul>
+                        <li><a href="#">CONDICIONES</a></li>
+                        <li><a href="#">TRABAJA CON NOSOTROS</a></li>
+                        <li><a href="#">MEDIOS DE PAGO</a></li>
+                        <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                    </ul>
+                    <button class="footer">BOTÓN DE ARREPENTIMIENTO</button>
+                </div>
+                <div title-footer>
+                    <h2 class="footer">Mi Tienda</h2>
+                </div>
+                <div class="position">
+                    <h4>
+                        <i
+                            class="fa-solid fa-location-dot fa-xs"
+                            style="color: #ffffff"
+                        ></i>
+                        SUCURSALES
+                    </h4>
+                    <h6>Whatsapp 2215137270</h6>
+                    <h6>ecommerce@mateu.com.ar</h6>
+                    <h6>La Plata 1900, Buenos Aires, Argentina</h6>
+                </div>
+            </div>
+            <div class="fin">
+                <div class="logos">
+                    <img src="./img/Group 1103.png" alt="">
+                    <img class="vtex" src="./img/c178cefe-7bbb-4b9f-8481-2a83f440d05e___7f627b13149c305958c6ee7cab74d010 1.png" alt="">
+
+                </div>
+                <div>
+                <small>&copy; 2023 <b>MateuSports</b> </small>
+                
+                    <img class="data"
+                        src="./img/Data-fiscal-Web.jpg"
+                        width="30px"
+                        height="30px"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
