@@ -223,7 +223,10 @@ span {
 
 h2.footer {
     color: white;
-    height: 40px;
+    
+    font-family: "Roboto", sans-serif;
+    font-style: italic !important;
+    font-weight: 800;
 }
 ul {
     list-style: none;
@@ -262,10 +265,17 @@ button.footer {
     margin: 0 40px;
 }
 .vendidas {
+    margin-top: 50px;
     margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 800;
 }
 .visita {
     margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 800;
 }
 .title-slide {
     font-family: "Roboto", sans-serif;
@@ -299,6 +309,7 @@ button.footer {
         font-weight: 600;
     }
 }
+
 .card-image {
     position: relative;
     height: 220px;
@@ -483,6 +494,7 @@ button.footer {
 
     h2.footer {
         font-size: 50px;
+        height: 40px;
     }
 
     .fin {
