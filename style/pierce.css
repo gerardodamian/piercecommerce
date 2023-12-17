@@ -70,6 +70,7 @@ span {
 }
 
 .form-control {
+    width: 100px !important;
     border-radius: 25px !important;
     position: relative;
 }
@@ -102,7 +103,6 @@ span {
         }
     }
 }
-
 
 .carr-1 {
     margin-bottom: 60px;
@@ -223,7 +223,7 @@ span {
 
 h2.footer {
     color: white;
-    
+
     font-family: "Roboto", sans-serif;
     font-style: italic !important;
     font-weight: 800;
@@ -286,7 +286,7 @@ button.footer {
     color: white;
 }
 .swiper-slide {
-    width: 250px;
+    width: 300px !important;
     height: 400px;
     border-radius: 10px;
     background-color: #fff;
@@ -352,9 +352,18 @@ button.footer {
 .carr-dep {
     display: none;
 }
-.banner-2{
+.banner-2 {
     display: none;
 }
+.fin{
+    position: relative;
+
+}
+.data{
+    position: absolute;
+    right: 1rem;
+}
+
 @media only screen and (min-width: 321px) and (max-width: 560px) {
     body {
         width: 100%;
@@ -421,26 +430,22 @@ button.footer {
         display: block;
 
         .carousel-inner {
-            .item1 {
+            .img-dep {
                 height: 208px;
-                background-image: url(../img/zapatillas.png);
-                background-position: center;
-                background-size: cover;
             }
+        }
+        .texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
 
-            .item2 {
-                height: 208px;
-                background-image: url(../img/futbol.png);
-            }
-
-            .item3 {
-                height: 208px;
-                background-image: url(../img/calzas.jpg);
-            }
-
-            .item4 {
-                height: 208px;
-                background-image: url(../img/pelota.jpg);
+            text-align: center;
+            h2 {
+                font-family: "Rubik", sans-serif;
+                font-weight: 800;
+                font-size: 38px;
             }
         }
 
@@ -456,7 +461,7 @@ button.footer {
     .banner {
         display: none;
     }
-    .banner-2{
+    .banner-2 {
         display: block;
         height: 300px;
         background-color: #ececec;
@@ -465,8 +470,6 @@ button.footer {
     .banner > div {
         width: 100%;
     }
-    
-
 
     .info-footer {
         width: 100%;
@@ -499,48 +502,58 @@ button.footer {
 
     .fin {
         display: flex;
+        position: relative;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         padding: 0 25px 50px 25px;
     }
-    }
-    .vtex {
-    padding-left: 10px;
-    }
-    small {
-    padding-right: 10px;
-    }
-    img.data {
-    float: right;
-    }
-    @media only screen and (min-width: 560px) and (max-width: 1130px){
-        .banner{
-            height: 500px;
 
+img.data{
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+}
+
+}
+.vtex {
+    padding-left: 10px;
+}
+
+
+@media only screen and (min-width: 560px) and (max-width: 1130px) {
+    .mi-cuenta {
+        display: none;
+    }
+
+    .form-control {
+        width: 200px !important;
+    }
+
+    .banner {
+        height: 500px;
+    }
+    .info-footer {
+        width: 100%;
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    .info-footer > div {
+        width: 100%;
+    }
+
+    .info-footer {
+        display: flex;
+        flex-direction: column;
+
+        .title-footer {
+            order: 1;
+            font-size: 32px;
         }
-        .info-footer {
-            width: 100%;
-            flex-direction: column;
-            padding: 50px 25px;
-        }
-    
-        .info-footer > div {
-            width: 100%;
-        }
-    
-        .info-footer {
-            display: flex;
-            flex-direction: column;
-    
-            .title-footer {
-                order: 1;
-                font-size: 32px;
-            }
-    
-            .informacion {
-                order: 2;
-            }
+
+        .informacion {
+            order: 2;
         }
     }
-     
+}
